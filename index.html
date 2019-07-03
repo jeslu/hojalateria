@@ -1,439 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head><link rel="stylesheet" href="css/normalize.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HojalateriaLuis</title>
+        <link rel="stylesheet" href="css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+      
+        <link rel="stylesheet" href="css/helpers.css">
+        <link rel="stylesheet" href="css/grid.css">
+       <style>
 
-<head>
-    <meta charset="UTF-8">
-    <title>HojalateriaLuis</title>
-    <link rel="shortcut icon" href="images/fav_icon.png" type="image/x-icon">
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css'>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/cards.css">
+.hero {
+    background: black url(images/hero-1.jpg) center / cover;
+}
 
-</head>
+@media (max-width: 1024px) { .hero { background: black url(images/hero-2.jpg) center / cover; } }
+@media (max-width:  768px) { .hero { background: black url(images/hero-3.jpg) center / cover; } }
 
-<body>
+/* responsive */
+@media (max-width: 768px) {
+    :root {
+        font-size: 90%;
+    }
+}
 
-        <!-- START NAV -->
-        <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="../">
-                                <img src="images/bulma.png" alt="Logo">
-                            </a>
-                        <span class="navbar-burger burger" data-target="navbarMenu">
-                                <span></span>
-                        <span></span>
-                        <span></span>
-                        </span>
-                    </div>
-                    <div id="navbarMenu" class="navbar-menu">
-                        <div class="navbar-end">
-                            <a class="navbar-item is-active">
-                                    Home
-                                </a>
-                            <a class="navbar-item">
-                                    Examples
-                                </a>
-                            <a class="navbar-item">
-                                    Features
-                                </a>
-                            <a class="navbar-item">
-                                    Team
-                                </a>
-                            <a class="navbar-item">
-                                    Archives
-                                </a>
-                            <a class="navbar-item">
-                                    Help
-                                </a>
-                            <div class="navbar-item has-dropdown is-hoverable">
-                                <a class="navbar-link">
-                                        Account
-                                    </a>
-                                <div class="navbar-dropdown">
-                                    <a class="navbar-item">
-                                            Dashboard
-                                        </a>
-                                    <a class="navbar-item">
-                                            Profile
-                                        </a>
-                                    <a class="navbar-item">
-                                            Settings
-                                        </a>
-                                    <hr class="navbar-divider">
-                                    <div class="navbar-item">
-                                        Logout
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- END NAV -->
 
-    <div class="container">
-        <div id="flow">
-            <span class="flow-1"></span>
-            <span class="flow-2"></span>
-            <span class="flow-3"></span>
+        </style>
+    </head>
+    <body>
+
+<!-- .hero -->
+<section class="hero is-fullheight">
+<!-- .hero-head -->
+<nav class="hero-head">
+    <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+        <div class="column left">
+            <figure class="navbar-item image">
+                <img src="images/fav_icon.png" style="width: 6.25rem; height: 1rem;">
+            </figure>
         </div>
-        <div class="section">
-            <div class="box">
-                <div class="field has-addons">
-                    <div class="control is-expanded">
-                        <input class="input has-text-centered" type="search" placeholder="» » » » » » find me « « « « « «">
-                    </div>
-                    <div class="control">
-                        <a class="button is-info">Search</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Developers -->
-            <div class="row columns">
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://images.unsplash.com/photo-1475778057357-d35f37fa89dd?dpr=1&auto=compress,format&fit=crop&w=1920&h=&q=80&cs=tinysrgb&crop=" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="https://i.imgsafe.org/a4/a4bb9acc5e.jpeg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">Okinami</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                    <p class="subtitle is-6">Lead Developer</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                The Beast stumbled in the dark for it could no longer see the path. It started to fracture and weaken, trying to reshape itself into the form of metal. Even the witches would no longer lay eyes upon it, for it had become hideous and twisted.
-                                <div class="background-icon"><span class="icon-twitter"></span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com/uzDLtlPY8kQ" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="https://cdn.discordapp.com/avatars/244932903530659841/0c924a19fcf1b5c59bc9dc1b58b61bb0.jpg?size=1024" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">McSocks</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                    <p class="subtitle is-6">Developer</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                The soul of the Beast seemed lost forever. Then, by the full moon's light, a child was born; child with the unbridled soul of the Beast that would make all others pale in comparison.
-                                <div class="background-icon"><span class="icon-facebook"></span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com/pe_R74hldW4" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="https://i.imgsafe.org/a5/a5e978ce20.jpeg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">The Conceptionist</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                    <p class="subtitle is-6">Developer</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                                <div class="background-icon"><span class="icon-barcode"></span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Developers -->
-
-            <!-- Staff -->
-            <div class="row columns is-multiline">
-                <div class="column is-one-third">
-                    <div class="card large round">
-                        <div class="card-image ">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com/Jy6luiLBsrk" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">Atsui</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com//Rfflri94rs8" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src='http://www.radfaces.com/images/avatars/richard-wang.jpg' alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">Sphirou Sapphirou</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com/b6VzeoRZiS0" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src='http://www.radfaces.com/images/avatars/jeffrey-douglas.jpg' alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">PlayTheFallen</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Sometimes I dip my nose into my cereals. I do it coz it's funny.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://i.imgsafe.org/a4/a4bda71ae4.jpeg" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="http://www.radfaces.com/images/avatars/scrappy-doo.jpg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">FelixCAT</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com/ogYIzsNGu3Y" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="http://www.radfaces.com/images/avatars/scrappy-doo.jpg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">ScoobyDOG</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com/KgjcndVr7tU" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="http://www.radfaces.com/images/avatars/scrappy-doo.jpg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                        <p class="title is-4 no-padding">Scrappy Doo</p>
-                                        <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                        <p class="subtitle is-6">Moderator</p>
-                                    </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://i.imgsafe.org/a5/a5e978ce20.jpeg" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="http://www.radfaces.com/images/avatars/alex-mack.jpg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">Prototyp3</p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com/Gnxquq4oYQc" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="http://www.radfaces.com/images/avatars/alex-mack.jpg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">Alex Mack</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://source.unsplash.com/qbtyUQtqJ8k" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="http://www.radfaces.com/images/avatars/alex-mack.jpg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">Alex Mack</p>
-                                    <p class="subtitle is-6">Moderator</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Staff -->
+        <div class="column center desktop">
+            <p class="navbar-item has-text-black">Pintura</p>
+            <p class="navbar-item has-text-black">Pulida y Encerada</p>
+            <p class="navbar-item has-text-black">Fibra de vidrio</p>
+           
+        </div>
+        <div class="column right">
+            <p class="navbar-item desktop has-text-black desktop"></p>
+            <p class="navbar-item desktop has-text-black desktop"></p>
+            <figure class="navbar-item image">
+                <i class="fas fa-3x fa-bars has-text-black"
+                    style="width: 1rem; height: 1rem;"></i>
+            </figure>
         </div>
     </div>
+</nav>
+<!-- /.hero-head -->
 
-    <footer class="footer">
-            <div class="container">
-                <div class="content has-text-centered">
-                    <div class="soc">
-                        <a href="#"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                    </div>
-                    <p>
-                        <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
-                        The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. <br>
-                    </p>
-                </div>
-            </div>
-        </footer>
+<!-- .hero-body -->
+<header class="hero-body">
+    <div class="is-overlay has-text-centered single-spaced" style="top: 92px;">
+        <h2 class="subtitle is-4 has-text-weight-light has-text-black">Taller <br>de</h2>
+        <h1 class="title is-1 has-text-black">Hojalateria Luis</h1>
+    </div>
+</header>
+<!-- /.hero-body -->
+<!-- HERO FOOT-->
+<main class="hero-foot center" style="padding: 2rem;">
+    <div id="grid" style="width: 768px;">
+        <div id="a" class="center-column">
+            <p class="has-text-centered has-text-white">
+                ​Nos ubicamos:<br>
+                HORARIO DE SERVICIO.
+            </p>
+        </div>
+        <div id="b" class="center-column">
+            <p class="title has-text-white">
+                <i class="fas fa-tachometer-alt has-text-grey-light"
+                    style="width: 0.75em; height: 0.75em;"></i>
+                8:00am<span class="is-size-5"></span>
+            </p>
+            <p class="subtitle has-text-white is-7">Entrada</p>
+        </div>
+        <div id="c" class="center-column" style="border-left: 1px solid gray;">
+            <p class="title has-text-white"><span class="is-size-7"></span>1:00pm2:00pm</p>
+            <p class="subtitle is-7 has-text-white">Hora de comida</p>
+        </div>
+        <div id="d" class="center-column" style="border-left: 1px solid gray;">
+            <p class="title has-text-white">6:00pm</span><span class="is-size-5"></span></p>
+            <p class="subtitle is-7 has-text-white">Salida</p>
+        </div>
+        <div id="e" class="center-column">
+            <a class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold"
+                style="width: 100%; border: 0.15em solid white;">
+                Servicios
+            </a>
+        </div>
+    </div>
+</main>
+<!-- /.hero-foot -->
+<!-- /.hero -->
 
-            <script src="js/bulma.js"></script>
-
-
-</body>
-
+    </body>
 </html>
