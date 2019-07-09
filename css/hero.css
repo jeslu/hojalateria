@@ -12,3 +12,10 @@
         font-size: 90%;
     }
 }
+.texto {
+  background: -webkit-linear-gradient(black,white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: tomato;  
+}
+
