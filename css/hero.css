@@ -16,12 +16,15 @@
   background: -webkit-linear-gradient(black,white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: tomato;  
+  color: tomato;
 }
-h1 {  
-  
+h1 {
+
   background: -webkit-linear-gradient(left top, white, red);
   background: linear-gradient(to bottom right, red, black);
-  -webkit-background-clip: text;  
-  -webkit-text-fill-color: transparent;  
-}  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color{
+  background-color:  #DC143C;
+}

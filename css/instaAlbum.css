@@ -71,7 +71,9 @@
   color: #fff;
   border-radius: 4px;
 }
-
+.navbar-item {
+  color:#4a4a4a !important;
+}
 /* @media screen and (max-width: 786px){
     .navbar {
         justify-content: space-between;
