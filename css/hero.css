@@ -13,19 +13,6 @@
     }
 }
 
-.hero1 {
-    background: black url(../images/fondo1.jpg) center / cover;
-}
-
-@media (max-width: 1024px) { .hero { background: black url(../images/fondo1.jpg) center / cover; } }
-@media (max-width:  768px) { .hero { background: black url(../images/fondo1.jpg) center / cover; } }
-
-/* responsive */
-@media (max-width: 768px) {
-    :root {
-        font-size: 90%;
-    }
-}
 .texto {
   background: -webkit-linear-gradient(black,red);
   -webkit-background-clip: text;
